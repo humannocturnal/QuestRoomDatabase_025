@@ -12,6 +12,7 @@ class LocalRepositoryMhs(
         mahasiswaDao.insertMahasiswa(mahasiswa) // Perbaiki jika ada typo di sini
     }
 
+
     override fun getAllMhs(): Flow<List<Mahasiswa>> {
         return mahasiswaDao.getAllMahasiswa()
     }
