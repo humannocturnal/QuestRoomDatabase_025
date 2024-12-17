@@ -16,6 +16,7 @@ abstract class KrsDatabase : RoomDatabase() {
         private var  Instances: KrsDatabase? = null
 
 
+
         fun getDatabase(context: Context, it: KrsDatabase?): KrsDatabase{
             return (Instances ?: synchronized(this) {
                 Room.databaseBuilder(
